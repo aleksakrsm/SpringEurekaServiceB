@@ -18,10 +18,12 @@ public class ServiceBRestController {
     @GetMapping("helloEureka")
     public String helloWorld() {
         log.info("helloEureka triggered on service B");
-        return restClient.get()
+        final var response = restClient.get()
             .uri("http://servicea/helloWorld")
             .retrieve()
             .body(String.class);
+        log.info("Response: " + response);
+        return response;
     }
 
 //    private final DiscoveryClient discoveryClient;
