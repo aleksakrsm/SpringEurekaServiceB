@@ -42,14 +42,14 @@ public class ConfigClass {
     }
 
     // Random Load Balancer, radi
-    @Bean
-    public RandomLoadBalancer randomLoadBalancer(LoadBalancerClientFactory clientFactory) {
-        String serviceId = "servicea";
-        if (serviceId == null) {
-            throw new IllegalStateException("Service ID cannot be null for LoadBalancer");
-        }
-        return new RandomLoadBalancer(clientFactory.getLazyProvider(serviceId, ServiceInstanceListSupplier.class), serviceId);
-    }
+//    @Bean
+//    public RandomLoadBalancer randomLoadBalancer(LoadBalancerClientFactory clientFactory) {
+//        String serviceId = "servicea";
+//        if (serviceId == null) {
+//            throw new IllegalStateException("Service ID cannot be null for LoadBalancer");
+//        }
+//        return new RandomLoadBalancer(clientFactory.getLazyProvider(serviceId, ServiceInstanceListSupplier.class), serviceId);
+//    }
 
     // least connections Load Balancer, radi
 //    @Bean

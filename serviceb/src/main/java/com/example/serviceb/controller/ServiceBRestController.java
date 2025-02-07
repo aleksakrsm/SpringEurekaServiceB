@@ -26,16 +26,4 @@ public class ServiceBRestController {
         return response;
     }
 
-//    private final DiscoveryClient discoveryClient;
-//    @GetMapping("helloEureka2")
-//    public String helloWorld2() {
-//        log.info("helloEureka triggered on service B");
-//        ServiceInstance serviceInstance = discoveryClient.getInstances("servicea").get(0);
-//        String serviceAResponse = restClient.get()
-//            .uri(serviceInstance.getUri() + "/helloWorld")
-//            .retrieve()
-//            .body(String.class);
-//        return serviceAResponse;
-//    }
-
 }
